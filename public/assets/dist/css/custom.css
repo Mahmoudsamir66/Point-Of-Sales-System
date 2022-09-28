@@ -1,0 +1,433 @@
+* {
+    direction: rtl !important;
+}
+
+* {
+    font-family: 'arabic-regular', sans-serif;
+}
+
+@font-face {
+    font-family: 'arabic-bold';
+    src: url('../../fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf');
+}
+
+@font-face {
+    font-family: 'arabic-regular';
+    src: url('../../fonts/ArbFONTS-DroidKufi-Regular.ttf');
+}
+
+.layout-fixed .main-sidebar {
+    right: 0;
+}
+
+
+/* start card  */
+
+.card {
+    direction: rtl !important;
+    margin-right: 15PX;
+}
+
+.card-footer button {
+    float: left;
+}
+
+
+/* end card */
+
+
+/*print */
+
+.body-print {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tahoma";
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm;
+    margin: 10mm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.subpage {
+    padding: 1cm;
+    border: 1px gray solid;
+    height: 257mm;
+    outline: 2cm white solid;
+}
+
+.size-print {
+    width: 100%;
+    height: 20mm;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+    }
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+
+
+/*/print*/
+
+
+/*print page */
+
+.non-display {
+    display: none;
+}
+
+@media print {
+    a {
+        display: none;
+    }
+    .non-display {
+        display: block;
+    }
+    .non-distable {
+        display: none;
+    }
+}
+
+
+/*/print page */
+
+
+/*font icons*/
+
+.div-icon.a {
+    text-decoration: none;
+}
+
+
+/*end font icons*/
+
+
+/* start of table */
+
+table {
+    margin-right: 15px;
+}
+
+
+/* end of table */
+
+
+/* start of login */
+
+.brand-image {
+    float: right;
+}
+
+.login-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.fontrag {
+    font-family: 'arabic-regular', sans-serif;
+}
+
+.brand-text {
+    font-family: 'arabic-regular', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.brand-text-login {
+    font-family: 'arabic-regular', sans-serif;
+    color: #444345;
+    font-size: 17px;
+    text-shadow: 1px 1px 4px #5a5a5a;
+}
+
+.login-box-msg {
+    color: #F47521;
+    font-weight: 800;
+}
+
+
+/* end of login */
+
+.content-wrapper,
+.main-footer,
+.main-header {
+    margin-left: 0px;
+    margin-right: 250px;
+}
+
+.mr-auto-navbav {
+    margin-right: auto!important;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+[class*=icheck-]>input:first-child:checked+input[type=hidden]+label::after,
+[class*=icheck-]>input:first-child:checked+label::after {
+    right: 15px;
+    left: auto;
+}
+
+.nav-sidebar .nav-link>.right,
+.nav-sidebar .nav-link>p>.right {
+    left: 1rem;
+    right: auto;
+}
+
+.nav-sidebar .nav-link>.right:nth-child(2),
+.nav-sidebar .nav-link>p>.right:nth-child(2) {
+    left: 2.2rem;
+    right: auto;
+}
+
+.small-box .icon>i {
+    left: 15px;
+    right: auto;
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper,
+    .sidebar-mini.sidebar-collapse .main-footer,
+    .sidebar-mini.sidebar-collapse .main-header {
+        margin-right: 4.6rem!important;
+    }
+    .sidebar-mini.sidebar-collapse .content-wrapper,
+    .sidebar-mini.sidebar-collapse .main-footer,
+    .sidebar-mini.sidebar-collapse .main-header {
+        margin-right: 4.6rem!important;
+        margin-left: 0!important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .main-sidebar,
+    .main-sidebar::before {
+        box-shadow: none !important;
+        margin-right: -250px;
+    }
+    .content-wrapper,
+    .content-wrapper::before,
+    .main-footer,
+    .main-footer::before,
+    .main-header,
+    .main-header::before {
+        margin-right: 0;
+    }
+    .sidebar-open .main-sidebar,
+    .sidebar-open .main-sidebar::before {
+        margin-right: 0;
+    }
+}
+
+
+/*student exam code style*/
+
+.code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px #333;
+    border-radius: 8px;
+}
+
+.holder .span {
+    padding: 0px 30px;
+}
+
+.code p {
+    margin: 20px 0 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.code form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.code form input[type="text"] {
+    border: none;
+    border-bottom: 1px solid rgb(161, 160, 160);
+    width: 150px;
+    outline: none;
+    margin-left: 15px;
+    font-family: 'arabic-regular', sans-serif;
+}
+
+.code form input[type="submit"] {
+    background-color: #371777;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'arabic-regular', sans-serif;
+}
+
+
+/* End student exam code style*/
+
+
+/*student exam style*/
+
+.header .container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.header .container .icon {
+    background-color: #eee;
+    padding: 10px;
+}
+
+.header .container p {
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+.header .container p span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgb(145, 145, 145);
+}
+
+.header .holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .count {
+    padding: 15px 20px;
+    margin-left: 20px;
+}
+
+#timer {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.progress {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.788);
+    height: 4px;
+    margin: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+}
+
+.progress #progress {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: #371777;
+    border-radius: 6px;
+}
+
+.questions>div p {
+    direction: rtl;
+    /* padding: 30px; */
+    font-size: 20px;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+
+.choice div {
+    /* padding: 20px; */
+}
+
+.choice div label {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.hide {
+    display: none;
+}
+
+.buttons {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons #back {
+    background-color: #371777;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 15px 20px;
+}
+
+.buttons #next,
+#submit {
+    background-color: #371777;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 15px 20px;
+}
+
+#submit {
+    display: none;
+}
+
+.buttons #next i {
+    margin-left: 10px;
+}
+
+
+textarea {
+ width: 100%;
+}
+
+/* end student exam style*/

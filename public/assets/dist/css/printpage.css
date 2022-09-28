@@ -1,0 +1,340 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font: 15pt;
+    }
+    
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        direction: rtl;
+    }
+    
+    @font-face {
+        font-family: 'arabic-bold';
+        src: url('../../fonts/Emad-DianaeXtra-OutLine.otf');
+    }
+    
+    @font-face {
+        font-family: 'arabic-regular';
+        src: url('../../fonts/ArbFONTS-DroidKufi-Regular.ttf');
+    }
+    
+    .page {
+        width: 29.7cm;
+        height: 21cm;
+        padding: 1cm;
+        margin: 1cm auto;
+        border: 1px #D3D3D3 solid;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .subpage {
+        width: 20cm;
+        height: 16;
+        margin: auto;
+        margin-top: 3cm;
+        margin-left: 4cm;
+    }
+    
+    .border {
+        border: 1px solid #000000;
+        padding: 2px;
+    }
+    /*  */
+    /* grid  */
+    
+    h1,
+    p {
+        margin: 0px;
+    }
+    
+    p {
+        font-family: 'arabic-regular';
+        font-size: 11px;
+        font-weight: 700;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .row>* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .col {
+        flex: 1 0 0%;
+    }
+    /* grid  */
+    /* header  */
+    
+    .header {
+        margin-top: 3.5cm;
+    }
+    
+    .header h1 {
+        color: red;
+        font-family: 'arabic-bold';
+        font-size: 19px;
+        text-shadow: 1px 1px #929292;
+    }
+    
+    .header p {
+        font-family: 'arabic-regular';
+        font-size: 11px;
+        font-weight: 700;
+    }
+    
+    .left-logo {
+        float: left;
+        margin-left: 3cm;
+    }
+    
+    .left-logo img {
+        margin-right: 28px;
+        margin-top: 11px;
+    }
+    
+    .left-logo p {
+        margin-top: 10px;
+    }
+    
+    .right-logo p {
+        text-align: center;
+        margin-left: 130px;
+    }
+    
+    .right-logo img {
+        margin-right: 28px;
+        margin-top: 15px;
+    }
+    
+    .center-text {
+        margin-top: .5cm;
+        text-align: center;
+        margin-left: 2cm;
+    }
+    /* header  */
+    /* elemnts  */
+    
+    .st-data {
+        margin-top: 5px;
+    }
+    /* elemnts  */
+    /* table */
+    
+    .table-cont {
+        width: 17cm;
+        margin: auto;
+        margin-left: 3cm;
+        margin-top: 3px;
+    }
+    
+    .table {
+        margin: 3px;
+        color: #212529 !important;
+        vertical-align: top;
+        border-color: #cccfd1;
+        border-collapse: collapse;
+    }
+    
+    .bg-secondary {
+        background-color: #797979 !important;
+        color: #fff;
+    }
+    
+    .bright {
+        background-color: #F5F5F5
+    }
+    
+    th {
+        font-size: 13px;
+        font-family: 'arabic-regular';
+        font-size: 11px;
+        font-weight: 700;
+        background-color: red;
+        color: rgb(255, 255, 255);
+        border-radius: 3px;
+        box-shadow: 2px 2px 15px -2px rgb(180, 180, 180);
+    }
+    
+    td {
+        font-size: 12px;
+        font-family: 'arabic-regular';
+        font-size: 11px;
+        font-weight: 700;
+        background-color: rgb(194, 194, 194);
+        border-radius: 3px;
+        padding-right: 2px;
+        color: rgb(0, 0, 0);
+    }
+    
+    td,
+    th {
+        padding: 1px 5px;
+    }
+    
+    .page {
+        background-image: url('../img/bg-kfs.webp');
+        background-size: 29.7cm 21cm;
+        background-repeat: no-repeat;
+    }
+    
+    @page {
+        size: landscape
+    }
+    
+    @media print {
+        body {
+            -webkit-print-color-adjust: exact;
+        }
+        .border {
+            border: 1px solid #000000;
+            padding: 2px;
+        }
+        .page {
+            margin: auto auto;
+            border: initial;
+            width: 29.5cm;
+            height: 19.9cm;
+            border-radius: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+        }
+        .subpage {
+            width: 20cm;
+            height: 16;
+            margin: auto;
+            margin-top: 3cm;
+            margin-left: 4cm;
+        }
+        .border {
+            border: 1px solid #000000;
+            padding: 2px;
+        }
+        /*  */
+        /* grid  */
+        h1,
+        p {
+            margin: 0px;
+        }
+        p {
+            font-family: 'arabic-regular';
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row>* {
+            flex-shrink: 0;
+            width: 100%;
+            max-width: 100%;
+        }
+        .col {
+            flex: 1 0 0%;
+        }
+        /* grid  */
+        /* header  */
+        .header {
+            margin-top: 3.5cm;
+        }
+        .header h1 {
+            color: red;
+            font-family: 'arabic-bold';
+            font-size: 19px;
+            text-shadow: 1px 1px #929292;
+        }
+        .header p {
+            font-family: 'arabic-regular';
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .left-logo {
+            float: left;
+            margin-left: 3cm;
+        }
+        .left-logo img {
+            margin-right: 28px;
+            margin-top: 11px;
+        }
+        .left-logo p {
+            margin-top: 10px;
+        }
+        .right-logo p {
+            text-align: center;
+            margin-left: 130px;
+        }
+        .right-logo img {
+            margin-right: 28px;
+            margin-top: 15px;
+        }
+        .center-text {
+            margin-top: .5cm;
+            text-align: center;
+            margin-left: 2cm;
+        }
+        /* header  */
+        /* elemnts  */
+        .st-data {
+            margin-top: 5px;
+        }
+        /* elemnts  */
+        /* table */
+        .table-cont {
+            width: 17cm;
+            margin: auto;
+            margin-left: 3cm;
+            margin-top: 3px;
+        }
+        .table {
+            margin: 3px;
+            color: #212529 !important;
+            vertical-align: top;
+            border-color: #cccfd1;
+            border-collapse: collapse;
+        }
+        .bg-secondary {
+            background-color: #797979 !important;
+            color: #fff;
+        }
+        .bright {
+            background-color: #F5F5F5
+        }
+        th {
+            font-size: 13px;
+            font-family: 'arabic-regular';
+            font-size: 11px;
+            font-weight: 700;
+            background-color: red;
+            color: rgb(255, 255, 255);
+            border-radius: 3px;
+            box-shadow: 2px 2px 15px -2px rgb(180, 180, 180);
+        }
+        td {
+            font-size: 12px;
+            font-family: 'arabic-regular';
+            font-size: 11px;
+            font-weight: 700;
+            background-color: rgb(194, 194, 194);
+            border-radius: 3px;
+            padding-right: 2px;
+            color: rgb(0, 0, 0);
+        }
+        td,
+        th {
+            padding: 1px 5px;
+        }
+        .page {
+            background-image: url('../img/bg-kfs.webp');
+            background-size: 29.7cm 21cm;
+            background-repeat: no-repeat;
+        }
+    }
